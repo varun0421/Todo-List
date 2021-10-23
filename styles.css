@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+      
+}
+body {
+    background-color:white;
+    transition: 0.3s ease;
+}
+
+header{
+    background-image: url('https://raw.githubusercontent.com/varun0421/FSWD/projects/assests/day.jpeg');
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Top Menu Bar */
+
+.todolist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.todolist div.topbar{
+    width: 450px;
+    min-height: 400px;
+    position: absolute;
+    top: 100px;
+}
+.topbar h2{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+div.list-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border-radius: 5px;
+    height: 40px;
+    opacity: 0.93;
+}
+div.list-item input {
+    border: 0px;
+    padding-left: 10px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 20px;
+}
+div.list-item input[type="text"]:focus{
+    border:none;
+    outline:none;
+}
+div.list-item input:focus {
+    border: none;
+    outline: none;
+}
+.list-item i:hover {
+    cursor: pointer;
+}
+
+/* Items - Bar */
+
+ol.todo-list {
+    margin-top: 50px;
+    max-height: 500px;
+    overflow-y:scroll;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    display: block;
+}
+ol .list-items{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+ol .taskbar {
+    font-size: 1rem !important;
+    font-weight: 500;
+    margin: 0px 10px;
+    margin: 10px;
+}
+ol {
+    list-style-type: decimal;
+}
+ol .taskbar div:nth-child(2) {
+    margin: 0px 10px !important;
+}
+ol .taskbar div:nth-child(3) {
+    position: relative;
+    right: 0;
+
+}
+
+ol .taskbar div:nth-child(2) div:hover {
+    cursor: pointer;
+    color: #be1b1b;
+}
+
+ol .taskbar div:nth-child(3):hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/* radio */
+
+.roundedTwo {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    margin: 10px auto;
+    background: #fcfff4;
+    border-radius: 50%;
+}
+
+
+.roundedTwo label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    background-color: #f6d327;
+    background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+
+.roundedTwo label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 2px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0.2;
+    transform: rotate(-45deg);
+}
+
+.roundedTwo label:hover::after {
+    opacity: 0.9;
+}
+
+.roundedTwo input[type=checkbox] {
+    visibility: hidden;
+}
+
+.roundedTwo input[type=checkbox]:checked+label:after {
+    opacity: 1;
+    
+}
+
+
+/* footer */
+
+img.social{
+    width: 30px;
+    margin: 0px 10px;
+}
+
+
+footer{
+    background-color: #e5e5e5;
+    color:#1b4332;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer i{
+    font-weight: 1000;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+
+footer i.fa-github {
+    color: black;
+}
+footer i.fa-instagram {
+    color:purple;
+}
+
+footer i.fa-linkedin {
+    color: dodgerblue
+}
+
+footer a {
+    color: #4f4dde;
+    text-decoration: none;
+}
