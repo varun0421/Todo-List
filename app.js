@@ -11,7 +11,7 @@ const list = select('ol.todo-list div.items')
 
 
 
-select('.fas.fa-plus').addEventListener('click', () => {
+select('.fa.fa-plus').addEventListener('click', () => {
     const input = select('.list-item input')
     addChore(input)
 })
