@@ -15,6 +15,12 @@ select('.fa.fa-plus').addEventListener('click', () => {
     const input = select('.list-item input')
     addChore(input)
 })
+select('.fa.fa-plus').addEventListener('keyup' , function (event) {
+    if (event.key == "Enter") {
+        const input = select('.list-item input')
+        addChore(input)
+    }
+})
 select('.clear').addEventListener('click', () => {
     clearList()
     // update array
